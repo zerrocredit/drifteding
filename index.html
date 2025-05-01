@@ -7,13 +7,13 @@
   <script src="UnityProgress.js"></script>
   <script src="UnityLoader.js"></script>
   <style>
-    /* Fullscreen styling */
+
     body, html {
       margin: 0;
       padding: 0;
       height: 100%;
       width: 100%;
-      overflow: hidden; /* Hide scrollbars */
+      overflow: hidden; /* Prevent scrollbars */
     }
     #gameContainer {
       width: 100%;
@@ -27,6 +27,7 @@
 <body>
   <div id="gameContainer"></div>
   <script>
+
     var gameInstance = UnityLoader.instantiate(
       "gameContainer", "Build/gameName.json", {
         onProgress: UnityProgress
